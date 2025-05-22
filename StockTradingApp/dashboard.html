@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Welcome to the Trading Dashboard</h1>
+
+  <div>
+    <input type="text" id="symbol" placeholder="Stock Symbol" />
+    <input type="number" id="quantity" placeholder="Quantity" />
+    <input type="number" id="price" placeholder="Price per Share" step="0.01" />
+    <button onclick="trade('BUY')">Buy</button>
+    <button onclick="trade('SELL')">Sell</button>
+  </div>
+
+  <hr />
+
+  <div>
+    <button id="viewHistoryBtn">View Trade History</button>
+    <button id="viewPortfolioBtn">View Portfolio</button>
+  </div>
+  <script>
+    console.log("User ID on dashboard:", localStorage.getItem("userId"));
+  </script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
