@@ -34,7 +34,7 @@ function login() {
         .then(user => {
           console.log("User object:", user);
 
-          // ✅ Store userId and username in localStorage
+          // Store userId and username in localStorage
           localStorage.setItem("userId", user.id);
           localStorage.setItem("username", username);
 
